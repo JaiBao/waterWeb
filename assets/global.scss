@@ -1,0 +1,200 @@
+// app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+* {
+  // overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.q-header {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.09);
+}
+.layoutTab {
+  // padding-bottom: 10px;
+  // .q-btn {
+  //   padding-bottom: 19px;
+  // }
+  .q-btn .q-focus-helper {
+    display: none;
+  }
+
+  .q-tabs__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  width: 100%;
+  margin: 1%;
+  .layoutTabs,
+  .layoutTabs2 {
+    // padding:0 2%;
+    margin: 0 1%;
+    @media (min-width: 768px) {
+      margin: 0 2%;
+    }
+  }
+}
+
+// 更改pink-8顏色
+.text-pink-8 {
+  color: #cc66bc !important;
+}
+.text-grey-8 {
+  color: #9a9a9a !important;
+}
+.text-grey-9 {
+  color: #444 !important;
+}
+.text-grey-10 {
+  color: #787878 !important;
+}
+.text-black {
+  color: #222 !important;
+}
+
+// 隱藏下拉箭頭
+.q-tabs {
+  .q-icon,
+  .material-icons,
+  .material-icons-outlined,
+  .material-icons-round,
+  .material-icons-sharp,
+  .material-symbols-outlined,
+  .material-symbols-rounded,
+  .material-symbols-sharp {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: inherit;
+    font-size: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+}
+
+//tabs觸碰紅色
+.q-tabs {
+  .q-btn-dropdown:hover {
+    // background-color: #cc66bc !important;
+    color: #f091e1 !important;
+  }
+  .q-btn-dropdown--active {
+    // background-color: #cc66bc !important;
+    color: #f091e1 !important;
+  }
+  .q-btn-dropdown.active {
+    // background-color: #cc66bc !important;
+    color: #f091e1 !important;
+    path {
+      fill: #cc66bc;
+    }
+    #spacial {
+      svg {
+        path {
+          stroke: #cc66bc;
+          fill: none;
+        }
+      }
+    }
+  }
+
+  .q-btn:before {
+    box-shadow: none;
+  }
+}
+.dropdown-hovered {
+  // background-color: #cc66bc !important;
+  color: #cc66bc !important;
+  path {
+    fill: #cc66bc;
+  }
+}
+.dropdown-hovered2 {
+  background-color: #cc66bc !important;
+  color: white !important;
+}
+.q-item.q-router-link--active,
+.q-item--active {
+  color: #cc66bc;
+}
+
+a:-webkit-any-link {
+  text-decoration: none; /* 去除下划线 */
+  color: inherit; /* 使用父元素的颜色 */
+}
+.q-field-h {
+  .q-field__control {
+    height: 38px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+.q-btn:before {
+  box-shadow: none;
+}
+.q-item.q-router-link--active {
+  color: #cc66bc !important;
+}
+// 通用title
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0;
+  img {
+    object-fit: contain;
+    width: 20px;
+    margin: 0;
+    margin-right: 8px;
+  }
+  h6 {
+    color: #1dbbee;
+    text-align: center;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    margin: 17px 0;
+  }
+  @media (min-width: 768px) {
+    img {
+      margin-right: 28px;
+      width: 28px;
+    }
+    h6 {
+      font-size: 2.125rem;
+    }
+  }
+}
+
+.round-10 {
+  .q-btn--rectangle {
+    border-radius: 10px !important;
+  }
+}
+// 文章列表圖片下方radius
+.articleCard > img:not(:last-child) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.q-btn .q-focus-helper {
+  display: none;
+}
+
+.textHover {
+  &:hover {
+    color: #cc66bc;
+    background: transparent;
+  }
+}
+
+.q-item .q-focus-helper {
+  display: none;
+}

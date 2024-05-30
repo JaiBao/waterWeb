@@ -1,0 +1,47 @@
+.productRank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3% 5%;
+  margin-bottom: 14%;
+  @media (min-width: 768px) {
+    margin-bottom: 5%;
+  }
+  @media (min-width: 1024px) {
+    padding: 3% 18%;
+  }
+}
+.rankCarousel {
+  width: 100%;
+}
+.rankCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .rankCardText {
+    font-size: 1.3125rem;
+    color: #444;
+    font-weight: 400;
+    line-height: 140%; /* 29.4px */
+
+    @media (min-width: 1024px) {
+      font-size: 0.75rem;
+    }
+    @media (min-width: 1500px) {
+      font-size: 1.3125rem;
+    }
+  }
+}
+.rankCard {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+}

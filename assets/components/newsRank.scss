@@ -1,0 +1,115 @@
+.productRank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3% 5%;
+  margin-bottom: 14%;
+  @media (min-width: 768px) {
+    margin-bottom: 5%;
+  }
+  @media (min-width: 1024px) {
+    padding: 3% 8%;
+  }
+  @media (min-width: 1530px) {
+    padding: 3% 18%;
+  }
+}
+
+.section6Cards {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid #000;
+  width: 100%;
+  // padding: 1% 5%;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1% 0%;
+  }
+}
+.section6Card {
+  box-shadow: none;
+  margin: 5%;
+  border-radius: 10px;
+  img {
+    object-fit: contain;
+  }
+  h6 {
+    color: #444;
+    font-size: 1.125rem;
+    margin: 0;
+    // margin-top: 20px;
+    font-weight: 400;
+    line-height: 140%; /* 29.4px */
+  }
+  .time {
+    color: #787878;
+    font-size: 0.875rem;
+    margin: 7px 0;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    span {
+      color: #cc66bc;
+    }
+  }
+  .content {
+    color: #787878;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    margin-bottom: 12px;
+  }
+  button {
+    border: 1px solid #3cb2fd;
+    width: 120px;
+    height: 40px;
+    color: #3cb2fd;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    &:hover {
+      color: #cc66bc;
+      border: 1px solid #cc66bc;
+    }
+  }
+  .q-card__section--vert {
+    padding: 5%;
+  }
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 1.3125rem;
+    }
+
+    .time {
+      font-size: 1rem;
+    }
+    .content {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    margin: 1%;
+    width: 31%;
+    h6 {
+      font-size: 1rem;
+    }
+
+    .time {
+      font-size: 0.875rem;
+    }
+    .content {
+      font-size: 0.875rem;
+    }
+  }
+  @media (min-width: 1550px) {
+    margin: 1%;
+    width: 31%;
+    h6 {
+      font-size: 1.3125rem;
+    }
+  }
+}

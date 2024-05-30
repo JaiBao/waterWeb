@@ -1,0 +1,21 @@
+.section1 {
+  margin: 0;
+
+  width: 100%;
+
+  img {
+    object-fit: contain;
+
+    width: 100%;
+    display: block;
+  }
+}
+.section2 {
+  margin-bottom: -130%;
+  z-index: 1;
+
+  //   margin: 3% 0;
+  @media (min-width: 1024px) {
+    margin-bottom: -35%;
+  }
+}

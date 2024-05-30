@@ -1,0 +1,22 @@
+<template>
+  <div>
+    <!-- <loading v-if="isLoading" /> -->
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
+</template>
+<script setup>
+// const nuxtApp = useNuxtApp()
+// const isLoading = ref(false)
+
+// nuxtApp.hook('page:start', () => {
+//   isLoading.value = true
+// })
+
+// nuxtApp.hook('page:finish', () => {
+//   setTimeout(() => {
+//     isLoading.value = false
+//   }, 2000)
+// })
+</script>

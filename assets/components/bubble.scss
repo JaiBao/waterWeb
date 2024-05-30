@@ -1,0 +1,71 @@
+.bubbleCompoment {
+  margin: 0;
+  position: relative;
+  // height: 100vh;
+  width: 100%;
+  z-index: -1;
+
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .custom-caption {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    // left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 5px 5px 5px rgb(85 79 79 / 75%);
+    h5 {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin: 0;
+      @media (min-width: 768px) {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 2.2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .mo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    img {
+      width: 10%;
+    }
+  }
+}
+.scroll-to-top-button {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  z-index: 3000;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  &:hover {
+    path {
+      fill: #cc66bc;
+    }
+  }
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+}
