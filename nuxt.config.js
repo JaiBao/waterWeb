@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  router: {
+    base: '/waterWeb/'
+  },
   runtimeConfig: {
     public: {
       gtagId: 'G-H603M7DMBT',

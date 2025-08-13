@@ -13,6 +13,7 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.0",
     "@vue/compiler-sfc": "^3.3.8",
+    "gh-pages": "^6.3.0",
     "nuxt": "^3.6.5",
     "nuxt-quasar-ui": "^2.0.4",
     "nuxt-simple-sitemap": "^3.3.2"
