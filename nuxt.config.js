@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-  router: {
-    base: '/waterWeb/'
+  app: {
+    baseURL: '/waterWeb/'
   },
   runtimeConfig: {
     public: {
@@ -37,6 +38,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://www.springwater.tw'
+    // url: 'https://www.springwater.tw'
+    url: 'https://JaiBao.github.io/waterWeb'
   }
 })
