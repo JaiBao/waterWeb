@@ -73,7 +73,7 @@ const createBubbles = (bubbleArray, maxWidth, maxRiseHeight) => {
   for (let i = 0; i < numBubbles; i++) {
     const bubble = {
       id: i,
-      imageSource: `/index/${Math.floor(Math.random() * 22) + 1}.png`,
+      imageSource: useAsset(`/index/${Math.floor(Math.random() * 22) + 1}.png`),
       width: Math.random() * maxWidth,
       riseHeight: Math.random() * maxRiseHeight,
       riseTime: Math.random() * 2 + 1,
