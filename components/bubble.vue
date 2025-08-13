@@ -1,8 +1,8 @@
 <template>
   <!-- //bubbleCompoment -->
   <div class="bubbleCompoment">
-    <img src="/default/bubbleBg.png" class="gt-sm" />
-    <img src="/default/bubbleBgApp.png" class="lt-md" />
+    <img :src="useAsset('/default/bubbleBg.png')" class="gt-sm" />
+    <img :src="useAsset('/default/bubbleBgApp.png')" class="lt-md" />
     <div class="absolute-center custom-caption">
       <!-- <div class="text-white alight-center customText2">
           <h5>
@@ -127,7 +127,7 @@ const animateBubble = (element, startY, breakY, riseTime) => {
   animation.fromTo(element, { x: '-10px' }, { x: '10px', duration: riseTime, ease: 'sine.inOut', repeat: 2, yoyo: true })
   animation.to(element, { y: `${breakY}px`, duration: riseTime, ease: 'sine.inOut', repeat: 3 }, '<')
   animation.add(() => {
-    element.src = '/index/2.png'
+    element.src = useAsset('/index/2.png')
   })
   animation.add(() => {
     if (element.getBoundingClientRect().top - window.scrollY <= breakY) {
@@ -140,7 +140,7 @@ const animateBubble = (element, startY, breakY, riseTime) => {
 }
 
 const restartAnimation = (element, startY) => {
-  element.src = '/index/22.png'
+  element.src = useAsset('/index/22.png')
   gsap.set(element, { y: '0px', x: '0px' })
   gsap.to(element, { opacity: 0.8, duration: 0.5 })
 }
